@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.token.selector,
+.token.property,
+.token.function,
+.token.comment {
+  color: black;
+}
+
+#code-wrapper{
+  display: flex; /*设置为flex可以设置里面的元素code，出现滚动条 */
+  height: 100vh;
+  position: fixed;
+  width: 50%;
+}
+
+#code{
+  width: 100%;
+  overflow: auto
+}
+
+#paper{
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  padding: 40px;
+  display: flex;
+}
+#paper .content{
+  display: block;
+  background: white;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 20px;
+}
+
+#paper>.html{
+  background: white;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  overflow: auto;
+}
